@@ -60,6 +60,8 @@
             // 
             // textBox1
             // 
+            this.textBox1.AcceptsReturn = true;
+            this.textBox1.AcceptsTab = true;
             this.textBox1.Location = new System.Drawing.Point(309, 95);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
@@ -67,6 +69,8 @@
             // 
             // textBox2
             // 
+            this.textBox2.AcceptsReturn = true;
+            this.textBox2.AcceptsTab = true;
             this.textBox2.Location = new System.Drawing.Point(309, 121);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
@@ -118,6 +122,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login de Usuario";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
