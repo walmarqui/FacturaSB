@@ -82,6 +82,12 @@
     <Compile Include="FrmFacturacion.Designer.cs">
       <DependentUpon>FrmFacturacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFacturasalcredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFacturasalcredito.Designer.cs">
+      <DependentUpon>FrmFacturasalcredito.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="form facturacion mensual.resx">
       <DependentUpon>form facturacion mensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFacturasalcredito.resx">
+      <DependentUpon>FrmFacturasalcredito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
