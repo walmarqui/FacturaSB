@@ -1,6 +1,6 @@
 ﻿namespace FacturacionSB
 {
-    partial class form_facturacion_mensual
+    partial class FrmFactMensual
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // form_facturacion_mensual
+            // FrmFactMensual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "form_facturacion_mensual";
-            this.Text = "facturacion mensual";
+            this.Name = "FrmFactMensual";
+            this.Text = "Facturacion Mensual";
             this.ResumeLayout(false);
 
         }

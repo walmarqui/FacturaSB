@@ -69,13 +69,13 @@
             // cotizacionesToolStripMenuItem
             // 
             this.cotizacionesToolStripMenuItem.Name = "cotizacionesToolStripMenuItem";
-            this.cotizacionesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cotizacionesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.cotizacionesToolStripMenuItem.Text = "Cotizaciones";
             // 
             // facturacionToolStripMenuItem
             // 
             this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
-            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.facturacionToolStripMenuItem.Text = "Facturacion";
             // 
             // reportesToolStripMenuItem
@@ -92,12 +92,14 @@
             this.facturacionMensualToolStripMenuItem.Name = "facturacionMensualToolStripMenuItem";
             this.facturacionMensualToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.facturacionMensualToolStripMenuItem.Text = "Facturacion Mensual";
+            this.facturacionMensualToolStripMenuItem.Click += new System.EventHandler(this.facturacionMensualToolStripMenuItem_Click);
             // 
             // facturasAlCreditoToolStripMenuItem
             // 
             this.facturasAlCreditoToolStripMenuItem.Name = "facturasAlCreditoToolStripMenuItem";
             this.facturasAlCreditoToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.facturasAlCreditoToolStripMenuItem.Text = "Facturas al Credito";
+            this.facturasAlCreditoToolStripMenuItem.Click += new System.EventHandler(this.facturasAlCreditoToolStripMenuItem_Click);
             // 
             // mantenimientoToolStripMenuItem
             // 
@@ -138,7 +140,7 @@
             // loginToolStripMenuItem1
             // 
             this.loginToolStripMenuItem1.Name = "loginToolStripMenuItem1";
-            this.loginToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.loginToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
             this.loginToolStripMenuItem1.Text = "Login";
             this.loginToolStripMenuItem1.Click += new System.EventHandler(this.loginToolStripMenuItem1_Click);
             // 

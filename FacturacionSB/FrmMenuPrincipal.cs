@@ -34,5 +34,20 @@ namespace FacturacionSB
         {
             Login();
         }
+
+        private void facturacionMensualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FrmFactMensual = new FrmFactMensual();
+            FrmFactMensual.MdiParent = this;
+            FrmFactMensual.Show();
+
+        }
+
+        private void facturasAlCreditoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FrmFactCredito = new FrmFactCredito();
+            FrmFactCredito.MdiParent = this;
+            FrmFactCredito.Show();
+        }
     }
 }
