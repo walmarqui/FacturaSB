@@ -63,25 +63,46 @@ namespace FacturacionSB
             frmFctMensual.Show();
         }
 
-        private void infoEmpresaToolStripMenuItem_Click(object sender, EventArgs e)
+        
+        private void agregarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void crearCajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void crearUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void razonSocialToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frmEmpresa = new FrmEmpresa();
             frmEmpresa.MdiParent = this;
             frmEmpresa.Show();
         }
 
-        private void infoCAIToolStripMenuItem_Click(object sender, EventArgs e)
+        private void agregarClientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var frmClientes = new FrmClientes();
+            frmClientes.MdiParent = this;
+            frmClientes.Show();
+        }
+
+        private void rangoDeFacturacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frmCAI = new FrmCAI();
             frmCAI.MdiParent = this;
             frmCAI.Show();
         }
 
-        private void agregarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void iSVToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var frmClientes = new FrmClientes();
-            frmClientes.MdiParent = this;
-            frmClientes.Show();
+
         }
     }
     }
