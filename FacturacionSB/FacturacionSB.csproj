@@ -114,6 +114,9 @@
     <EmbeddedResource Include="FrmEmpresa.resx">
       <DependentUpon>FrmEmpresa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFactMensual.resx">
+      <DependentUpon>FrmFactMensual.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmFacturacion.resx">
       <DependentUpon>FrmFacturacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PQT-SEIC-NUEVO-LOGO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seic87x97.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
