@@ -69,5 +69,25 @@ namespace FacturacionSB.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PQT_SEIC_NUEVO_LOGO {
+            get {
+                object obj = ResourceManager.GetObject("PQT-SEIC-NUEVO-LOGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PQT_SEIC_NUEVO_LOGO1 {
+            get {
+                object obj = ResourceManager.GetObject("PQT-SEIC-NUEVO-LOGO1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

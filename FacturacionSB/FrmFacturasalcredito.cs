@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace FacturacionSB
 {
-    public partial class FrmEmpresa : Form
+    public partial class FrmFacturasalcredito : Form
     {
-        public FrmEmpresa()
+        public FrmFacturasalcredito()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

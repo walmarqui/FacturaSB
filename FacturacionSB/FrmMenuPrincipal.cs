@@ -35,19 +35,54 @@ namespace FacturacionSB
             Login();
         }
 
-        private void facturacionMensualToolStripMenuItem_Click(object sender, EventArgs e)
+        private void cotizacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var FrmFactMensual = new FrmFactMensual();
-            FrmFactMensual.MdiParent = this;
-            FrmFactMensual.Show();
+            var frmCotizaciones = new FrmCotizacion();
+            frmCotizaciones.MdiParent = this;
+            frmCotizaciones.Show();
+        }
 
+        private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmFacturacion = new FrmFacturacion();
+            frmFacturacion.MdiParent = this;
+            frmFacturacion.Show();
         }
 
         private void facturasAlCreditoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var FrmFactCredito = new FrmFactCredito();
-            FrmFactCredito.MdiParent = this;
-            FrmFactCredito.Show();
+            var frmFctCredito = new FrmFctCredito();
+            frmFctCredito.MdiParent = this;
+            frmFctCredito.Show();
+        }
+
+        private void facturacionMensualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmFctMensual = new FrmFactMensual();
+            frmFctMensual.MdiParent = this;
+            frmFctMensual.Show();
+        }
+
+        private void infoEmpresaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmEmpresa = new FrmEmpresa();
+            frmEmpresa.MdiParent = this;
+            frmEmpresa.Show();
+        }
+
+        private void infoCAIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmCAI = new FrmCAI();
+            frmCAI.MdiParent = this;
+            frmCAI.Show();
+        }
+
+        private void agregarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmClientes = new FrmClientes();
+            frmClientes.MdiParent = this;
+            frmClientes.Show();
         }
     }
-}
+    }
+

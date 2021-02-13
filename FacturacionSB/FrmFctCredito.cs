@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace FacturacionSB
 {
-    public partial class FrmFactCredito: Form
+    public partial class FrmFctCredito : Form
     {
-        public FrmFactCredito()
+        public FrmFctCredito()
         {
             InitializeComponent();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace FacturacionSB
 {
-    partial class FrmFactCredito
+    partial class FrmFacturasalcredito
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // FrmFactCredito
+            // FrmFacturasalcredito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "FrmFactCredito";
+            this.Name = "FrmFacturasalcredito";
             this.Text = "Facturas al Credito";
             this.ResumeLayout(false);
 

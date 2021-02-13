@@ -70,12 +70,6 @@
     <Compile Include="FrmEmpresa.Designer.cs">
       <DependentUpon>FrmEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFactCredito.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmFactCredito.Designer.cs">
-      <DependentUpon>FrmFactCredito.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmFactMensual.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +81,12 @@
     </Compile>
     <Compile Include="FrmFacturacion.Designer.cs">
       <DependentUpon>FrmFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFctCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFctCredito.Designer.cs">
+      <DependentUpon>FrmFctCredito.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -102,11 +102,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmFactCredito.resx">
-      <DependentUpon>FrmFactCredito.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCAI.resx">
+      <DependentUpon>FrmCAI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmFactMensual.resx">
-      <DependentUpon>FrmFactMensual.cs</DependentUpon>
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCotizacion.resx">
+      <DependentUpon>FrmCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpresa.resx">
+      <DependentUpon>FrmEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFacturacion.resx">
+      <DependentUpon>FrmFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFctCredito.resx">
+      <DependentUpon>FrmFctCredito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -145,6 +157,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngtree-vector-lock-icon-png-image_316863.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PQT-SEIC-NUEVO-LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PQT-SEIC-NUEVO-LOGO1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

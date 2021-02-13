@@ -41,6 +41,7 @@
             this.agregarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,12 +72,14 @@
             this.cotizacionesToolStripMenuItem.Name = "cotizacionesToolStripMenuItem";
             this.cotizacionesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.cotizacionesToolStripMenuItem.Text = "Cotizaciones";
+            this.cotizacionesToolStripMenuItem.Click += new System.EventHandler(this.cotizacionesToolStripMenuItem_Click);
             // 
             // facturacionToolStripMenuItem
             // 
             this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
             this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.facturacionToolStripMenuItem.Text = "Facturacion";
+            this.facturacionToolStripMenuItem.Click += new System.EventHandler(this.facturacionToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -116,23 +119,27 @@
             this.infoEmpresaToolStripMenuItem.Name = "infoEmpresaToolStripMenuItem";
             this.infoEmpresaToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.infoEmpresaToolStripMenuItem.Text = "Info Empresa";
+            this.infoEmpresaToolStripMenuItem.Click += new System.EventHandler(this.infoEmpresaToolStripMenuItem_Click);
             // 
             // infoCAIToolStripMenuItem
             // 
             this.infoCAIToolStripMenuItem.Name = "infoCAIToolStripMenuItem";
             this.infoCAIToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.infoCAIToolStripMenuItem.Text = "Info CAI";
+            this.infoCAIToolStripMenuItem.Click += new System.EventHandler(this.infoCAIToolStripMenuItem_Click);
             // 
             // agregarClientesToolStripMenuItem
             // 
             this.agregarClientesToolStripMenuItem.Name = "agregarClientesToolStripMenuItem";
             this.agregarClientesToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.agregarClientesToolStripMenuItem.Text = "Agregar Clientes";
+            this.agregarClientesToolStripMenuItem.Click += new System.EventHandler(this.agregarClientesToolStripMenuItem_Click);
             // 
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loginToolStripMenuItem1});
+            this.loginToolStripMenuItem1,
+            this.salirToolStripMenuItem});
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
             this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.loginToolStripMenuItem.Text = "Login";
@@ -140,9 +147,15 @@
             // loginToolStripMenuItem1
             // 
             this.loginToolStripMenuItem1.Name = "loginToolStripMenuItem1";
-            this.loginToolStripMenuItem1.Size = new System.Drawing.Size(104, 22);
+            this.loginToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.loginToolStripMenuItem1.Text = "Login";
             this.loginToolStripMenuItem1.Click += new System.EventHandler(this.loginToolStripMenuItem1_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
             // 
             // FrmMenuPrincipal
             // 
@@ -179,6 +192,7 @@
         private System.Windows.Forms.ToolStripMenuItem agregarClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
 }
 

@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FrmFacturacion
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "FrmFacturacion";
+            this.ClientSize = new System.Drawing.Size(931, 588);
+            this.Name = "FrmFacturacion";
+            this.Text = "Facturacion";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
