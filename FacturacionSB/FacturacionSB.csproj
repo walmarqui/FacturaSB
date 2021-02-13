@@ -153,9 +153,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLSeguridad\BLSeguridad.csproj">
+    <ProjectReference Include="..\BLSeguridad\BLFacturacionSB.csproj">
       <Project>{8345903e-d06c-4899-8ead-fdc37048695b}</Project>
-      <Name>BLSeguridad</Name>
+      <Name>BLFacturacionSB</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
