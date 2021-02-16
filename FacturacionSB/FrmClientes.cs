@@ -1,20 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BLFacturacionSB;
+using System;
 using System.Windows.Forms;
 
 namespace FacturacionSB
 {
     public partial class FrmClientes : Form
     {
+        ClientesBL _clientes;
+
+
         public FrmClientes()
         {
             InitializeComponent();
+
+            _clientes = new ClientesBL();
+            listaClienteBindingSource.DataSource = _clientes.ObtenerClientes();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -33,6 +33,22 @@ namespace FacturacionSB
         }
 
         private void FrmClientes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigatorMovePreviousItem_Click(object sender, EventArgs e)
         {
 
         }
