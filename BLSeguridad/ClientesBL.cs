@@ -106,6 +106,36 @@ namespace BLFacturacionSB
         {
             return ListaCliente;
         }
+
+        public bool GuardarCliente(Cliente cliente)
+        {
+            if (cliente.Id == 0)
+            {
+                cliente.Id = ListaCliente.Max(item => item.Id) + 1;
+            }
+                return true;
+        }
+
+        public void AgregarCliente()
+        {
+            var nuevoCliente = new Cliente();
+            ListaCliente.Add(nuevoCliente);
+
+        }
+
+        public bool EliminarCliente(int id)
+        {
+            foreach (var cliente in ListaCliente)
+            {
+                if (cliente.Id == id)
+                {
+                    ListaCliente.Remove(cliente);
+                    return true;
+                   }
+                }
+                
+                    return false;
+            }
     }
     
       
