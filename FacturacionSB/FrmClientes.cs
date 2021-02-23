@@ -105,13 +105,15 @@ namespace FacturacionSB
 
             var resultado = _clientes.GuardarCliente(Cliente);
 
-            if (resultado == true)
+            if (resultado.Exitoso == true)
             {
                 listaClienteBindingSource.ResetBindings(false);
+                DesabilitarHabilitarBotones(true);
+                MessageBox.Show("Cliente agregado con exito ");
             }
             else
             {
-                MessageBox.Show("Ocurrio un error al guardar este registro.");
+                MessageBox.Show(resultado.Mensaje);
             }
         }
 
@@ -124,24 +126,63 @@ namespace FacturacionSB
         {
             _clientes.AgregarCliente();
             listaClienteBindingSource.MoveLast();
+
+            DesabilitarHabilitarBotones(false);
+        }
+
+        private void DesabilitarHabilitarBotones(bool valor)
+        {
+            //throw new NotImplementedException();
+            bindingNavigatorMoveFirstItem.Enabled = valor;
+            bindingNavigatorMoveLastItem.Enabled = valor;
+            bindingNavigatorMovePreviousItem.Enabled = valor;
+            bindingNavigatorMoveNextItem.Enabled = valor;
+
+            bindingNavigatorAddNewItem.Enabled = valor;
+            bindingNavigatorDeleteItem.Enabled = valor;
+
+            toolStripButtonCancelar.Visible = !valor;
         }
 
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
         {
+            
+           
             if (idTextBox.Text != "")
             {
-                var id = Convert.ToInt32(idTextBox.Text);
-                var resultado = _clientes.EliminarCliente(id);
-
-                if (resultado == true)
+                var resultado = MessageBox.Show("Decea eliminar este registro!", "Eliminar", MessageBoxButtons.YesNo);
+                if (resultado == DialogResult.Yes)
                 {
-                    listaClienteBindingSource.ResetBindings(false);
+                    var id = Convert.ToInt32(idTextBox.Text);
+                    Eliminar(id);
                 }
-                else
-                {
-                    MessageBox.Show("Ha ocurrido un error al eliminar este registro.");
-                }
+                              
             }
+        }
+
+        private void Eliminar(int id)
+        {
+            var resultado = _clientes.EliminarCliente(id);
+
+            if (resultado == true)
+            {
+                listaClienteBindingSource.ResetBindings(false);
+            }
+            else
+            {
+                MessageBox.Show("Ha ocurrido un error al eliminar este registro.");
+            }
+        }
+
+        private void idTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButtonCancelar_Click(object sender, EventArgs e)
+        {
+            DesabilitarHabilitarBotones(true);
+            Eliminar(0);
         }
     }
 }
