@@ -1,5 +1,7 @@
 ﻿using BLFacturacionSB;
 using System;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace FacturacionSB
@@ -103,6 +105,15 @@ namespace FacturacionSB
             listaClienteBindingSource.EndEdit();
             var Cliente = (Cliente)listaClienteBindingSource.Current;
 
+            if (fotoPictureBox.Image != null)
+            {
+                Cliente.Foto = Program.imageToByteArray(fotoPictureBox.Image);
+            }
+            else
+            {
+                Cliente.Foto = null;
+            }
+
             var resultado = _clientes.GuardarCliente(Cliente);
 
             if (resultado.Exitoso == true)
@@ -183,6 +194,44 @@ namespace FacturacionSB
         {
             DesabilitarHabilitarBotones(true);
             Eliminar(0);
+        }
+
+        private void fotoPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var Cliente = (Cliente)listaClienteBindingSource.Current;
+            if (Cliente !=null)
+            {
+                openFileDialog1.ShowDialog();
+                var archivo = openFileDialog1.FileName;
+
+                if (archivo != "")
+                {
+                    var fileInfo = new FileInfo(archivo);
+                    var fileStream = fileInfo.OpenRead();
+
+                    fotoPictureBox.Image = Image.FromStream(fileStream);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Cree un nuevo cliente para poder agregar una imagen");
+            }
+          
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fotoPictureBox.Image = null;
+        }
+
+        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
         }
     }
 }

@@ -77,6 +77,10 @@
             this.telefonoTextBox = new System.Windows.Forms.TextBox();
             this.termPagoTextBox = new System.Windows.Forms.TextBox();
             this.tipoClienteTextBox = new System.Windows.Forms.TextBox();
+            this.fotoPictureBox = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             activoLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
@@ -91,6 +95,7 @@
             this.listaClienteBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listaClienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaClienteDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // activoLabel
@@ -223,7 +228,7 @@
             this.listaClienteBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaClienteBindingNavigator.Name = "listaClienteBindingNavigator";
             this.listaClienteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaClienteBindingNavigator.Size = new System.Drawing.Size(894, 25);
+            this.listaClienteBindingNavigator.Size = new System.Drawing.Size(1091, 25);
             this.listaClienteBindingNavigator.TabIndex = 1;
             this.listaClienteBindingNavigator.Text = "bindingNavigator1";
             this.listaClienteBindingNavigator.RefreshItems += new System.EventHandler(this.listaClienteBindingNavigator_RefreshItems);
@@ -355,7 +360,7 @@
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewCheckBoxColumn1});
             this.listaClienteDataGridView.DataSource = this.listaClienteBindingSource;
-            this.listaClienteDataGridView.Location = new System.Drawing.Point(67, 223);
+            this.listaClienteDataGridView.Location = new System.Drawing.Point(26, 208);
             this.listaClienteDataGridView.Name = "listaClienteDataGridView";
             this.listaClienteDataGridView.Size = new System.Drawing.Size(1045, 314);
             this.listaClienteDataGridView.TabIndex = 2;
@@ -505,11 +510,51 @@
             this.tipoClienteTextBox.Size = new System.Drawing.Size(104, 20);
             this.tipoClienteTextBox.TabIndex = 22;
             // 
+            // fotoPictureBox
+            // 
+            this.fotoPictureBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.fotoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.listaClienteBindingSource, "Foto", true, System.Windows.Forms.DataSourceUpdateMode.Never));
+            this.fotoPictureBox.Location = new System.Drawing.Point(902, 45);
+            this.fotoPictureBox.Name = "fotoPictureBox";
+            this.fotoPictureBox.Size = new System.Drawing.Size(100, 74);
+            this.fotoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fotoPictureBox.TabIndex = 24;
+            this.fotoPictureBox.TabStop = false;
+            this.fotoPictureBox.Click += new System.EventHandler(this.fotoPictureBox_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(856, 159);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 23);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Agregar Foto";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(958, 158);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 25);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "Remover Foto";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.Filter = "jpg, png | *.jpg; *.png";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(894, 378);
+            this.ClientSize = new System.Drawing.Size(1091, 542);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.fotoPictureBox);
             this.Controls.Add(activoLabel);
             this.Controls.Add(this.activoCheckBox);
             this.Controls.Add(emailLabel);
@@ -544,6 +589,7 @@
             this.listaClienteBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listaClienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaClienteDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -588,5 +634,9 @@
         private System.Windows.Forms.TextBox termPagoTextBox;
         private System.Windows.Forms.TextBox tipoClienteTextBox;
         private System.Windows.Forms.ToolStripButton toolStripButtonCancelar;
+        private System.Windows.Forms.PictureBox fotoPictureBox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
