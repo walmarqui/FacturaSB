@@ -105,6 +105,13 @@ namespace FacturacionSB
                 Close();
             }
         }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmFactura = new FrmFacturacion();
+            frmFactura.MdiParent = this;
+            frmFactura.Show();
+        }
     }
 }
 

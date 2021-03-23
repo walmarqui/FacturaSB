@@ -16,5 +16,10 @@ namespace FacturacionSB
         {
             InitializeComponent();
         }
+
+        private void FrmFacturacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

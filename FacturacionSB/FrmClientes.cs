@@ -192,8 +192,9 @@ namespace FacturacionSB
 
         private void toolStripButtonCancelar_Click(object sender, EventArgs e)
         {
+            _clientes.CancelarCambios();
             DesabilitarHabilitarBotones(true);
-            Eliminar(0);
+            //Eliminar(0);
         }
 
         private void fotoPictureBox_Click(object sender, EventArgs e)

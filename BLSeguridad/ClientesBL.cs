@@ -24,8 +24,19 @@ namespace BLFacturacionSB
         {
             _contexto.Clientes.Load();
             ListaClientes = _contexto.Clientes.Local.ToBindingList();
+
             return ListaClientes;
         }
+
+        public void CancelarCambios()
+        {
+            foreach (var item in _contexto.ChangeTracker.Entries()) 
+            {
+                item.State = EntityState.Unchanged;
+                item.Reload();
+            }
+        }
+
 
         public Resultado GuardarCliente(Cliente cliente)
         {
